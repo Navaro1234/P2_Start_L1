@@ -9,12 +9,17 @@ def initialiseer_bord():
     return bord
 
 
-def zet():
-    pass
+def zet(bord, rij, kolom, speler):
+    bord[rij][kolom] = speler
+    return bord
+
 
 
 def print_bord(bord):
-    pass
+    print("\n") # dit print een lijn.
+    for rij in bord:
+        print("|".join(rij))
+        print("-" * 5)
 
 
 def controleer_winnaar(bord):
